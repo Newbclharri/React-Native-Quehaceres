@@ -30,15 +30,12 @@ export default function Home () {
         )
     }, []);
 
-    const deleteTodos = async (todos) => {
-        try{
-            await todoRef
-                .doc(todos.id)
-                .delete();
-            alert("Todo Deleted");
-        }catch(error){
-            alert(error);
-        };
+    const deleteTodo = (todo) => {
+        todoRef
+            .doc(todo.id)
+            .delete()
+            .then(() => {alert("Todo Deleted")})
+            .catch( error =>{alert(error)})
     };
 
     // add a todo
@@ -92,6 +89,7 @@ export default function Home () {
                                     style={styles.todoIcon}
                                     name='x-square'
                                     color='red'
+                                    onPress={()=> deleteTodo(item)}
                                 />
                                 <View style={styles.itemContainer}>
                                     <Text style={styles.itemHeading}>{item.heading[0].toUpperCase() + item.heading.slice(1)}</Text>
