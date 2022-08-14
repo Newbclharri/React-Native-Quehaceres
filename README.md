@@ -13,8 +13,9 @@
 
 ## Things I Want to Improve:
 - Add authentication and authorization
- - add notes on detail page
- - Drag and reorder todos to dynamically prioritize
+- add notes on detail page
+- Drag and reorder todos to dynamically prioritize
+- Keep previous text during edit
 
 
 ## Problem Being Solved and Target Market
