@@ -76,7 +76,7 @@ export default function Home () {
                     value={addData} //the value of the input field will be the current state of addData in setAddData
                 />
                 <TouchableOpacity style={styles.button} onPress={addTodo}>
-                    <Text>+</Text>
+                    <Text style={styles.buttonText}>+</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -84,6 +84,10 @@ export default function Home () {
 };
 
 const styles =StyleSheet.create({
+    buttonText:{
+        color: 'green',
+        fontSize: 20,
+    },
     container:{
 
     },
