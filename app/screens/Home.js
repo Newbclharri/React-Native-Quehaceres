@@ -133,6 +133,7 @@ const styles =StyleSheet.create({
         backgroundColor:'white',
         flex: 1, //since formContainer flexDirection is set to 'row' (horizontal direction), a property of <flex: 1> will occupy 100% of the device screen width
         marginRight: 5,
+        paddingLeft: 15,
     },
     itemContainer:{
         alignItems:'center',
