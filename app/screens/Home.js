@@ -4,7 +4,7 @@ import {firebase} from '../config';
 import { FontAwesome } from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
 
-const Home = () => {
+export default function Home () {
     const [todos, setTodos] =useState([]);
     const todoRef = firebase.firestore().collection('todos');
     const [addData, setAddData] = useState('');
@@ -22,7 +22,7 @@ const Home = () => {
                     const {heading} = doc.data()
                     todos.push({
                         id: doc.id,
-                        heading,
+                        heading, //if local variable and key are the same then you only have to type the key succeeded by a comma e.g. {heading,} instead of {heading: heading}
                     })
                 })
                 setTodos(todos)
@@ -65,16 +65,17 @@ const Home = () => {
     }
 
     return(
-        <View>
+        <View style={{flex: 1}}>
             <Text>Home</Text>
-            <View>
+            <View style={styles.formContainer}>
                 <TextInput
-                    placeholder='Add A New Todo'
+                    style={styles.input}
+                    placeholder='Add Todo'
                     placeholderTextColor='grey'
-                    onChangeText={(text) => setAddData(text)}
-                    value={addData}
+                    onChangeText={(text) => setAddData(text)} //update state value for setAddData to add to do
+                    value={addData} //the value of the input field will be the current state of addData in setAddData
                 />
-                <TouchableOpacity onPress={addTodo}>
+                <TouchableOpacity style={styles.button} onPress={addTodo}>
                     <Text>+</Text>
                 </TouchableOpacity>
             </View>
@@ -82,4 +83,23 @@ const Home = () => {
     )
 };
 
-export default Home;
+const styles =StyleSheet.create({
+    container:{
+
+    },
+    formContainer:{
+        flexDirection: 'row',
+        height: 80,
+        marginLeft: 10,
+        marginRight: 10,
+        marginTop: 100,
+    },
+    input:{
+        height: 48,
+        borderRadius: 5,
+        overflow:'hidden',
+        backgroundColor:'white',
+        flex: 1, //since formContainer flexDirection is set to 'row' (horizontal direction), a property of <flex: 1> will occupy 100% of the device screen width
+        marginRight: 5,
+    }
+})
