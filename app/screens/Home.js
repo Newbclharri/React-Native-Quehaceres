@@ -51,21 +51,33 @@ const Home = () => {
                 heading: addData,
                 createdAt: timestamp
             };
-            try{
-                await todoRef
-                    .add(data)
-                setAddData(''); //resets addData state
-                // release Keyboard
-                Keyboard.dismiss();
-            }catch(error){
-                alert(error);
-            };
+            todoRef
+                .add(data)
+                .then(() => {
+                    setAddData('');
+                    // release Keyboard
+                    Keyboard.dismiss();
+                })
+                .catch((error) => {
+                    alert(error);
+                });
         }
     }
 
     return(
         <View>
             <Text>Home</Text>
+            <View>
+                <TextInput
+                    placeholder='Add A New Todo'
+                    placeholderTextColor='grey'
+                    onChangeText={(text) => setAddData(text)}
+                    value={addData}
+                />
+                <TouchableOpacity onPress={addTodo}>
+                    <Text>+</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     )
 };
