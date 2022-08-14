@@ -10,18 +10,8 @@ import Detail from './app/screens/Detail';
 
 const Stack = createStackNavigator();
 
-//////////////////
-// Componentes to Keep in Mind
-//////////////////
-// Platform, Image
 
 export default function App() {
-  let x = 1;
-  console.log('App executed');
-  // console.log(useDimensions());
-  // function handlePress(){
-  //   console.log("Text 1 pressed");
-  // };
 
   return (
     <NavigationContainer>
@@ -32,5 +22,3 @@ export default function App() {
     </NavigationContainer>
   );
 };
-
-
