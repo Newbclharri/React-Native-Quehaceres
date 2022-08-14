@@ -24,8 +24,8 @@ Quickly manage list of tasks on an android mobile device
 ## User Stories
 
 - As a user, I want to view all todos
-- Edit a todo
-- Delete a todo
+- I want to edit a todo
+- I want to delete a todo
 
 ## Route Tables
 |Name|Action|
