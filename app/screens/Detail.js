@@ -31,7 +31,7 @@ export default function Detail ({route}) {
                 style={styles.textField} 
                 onChangeText={onChangeHeadingText}
                 placeholder={textHeading.heading}
-                value={textHeading.name}
+                value={textHeading.heading}
                 
             />
             <Pressable
