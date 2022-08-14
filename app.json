@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MyFirstRNApp",
-    "slug": "MyFirstRNApp",
+    "name": "Todo Mobile",
+    "slug": "Todo Mobile",
     "privacy": "public",
     "description": "An app that manages a your to do items",
     "version": "1.0.0",
