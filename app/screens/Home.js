@@ -43,8 +43,8 @@ const Home = () => {
 
     // add a todo
     const addTodo = async () =>{
-        // check for existing todo
-        if(addData && addData.length){
+        // check for existing todo that isn't empty string
+        if(addData && addData.length > 0){
             // get timestamp
             const timestamp = firebase.firestore.FieldValue.serverTimestamp();
             const data = {
@@ -54,6 +54,9 @@ const Home = () => {
             try{
                 await todoRef
                     .add(data)
+                setAddData(''); //resets addData state
+                // release Keyboard
+                Keyboard.dismiss();
             }catch(error){
                 alert(error);
             };

@@ -1,7 +1,7 @@
-import {API_KEY} from 'react-native-dotenv';
+import {API_KEY} from '@env';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
-import 'firebase/compate/firestore';
+import 'firebase/compat/firestore';
 
 
 
