@@ -140,18 +140,23 @@ const styles =StyleSheet.create({
         alignItems:'center',
         flexDirection: 'column',
         marginLeft: 20,
+        
     },
     itemHeading:{
         fontWeight: 'bold',
         fontSize: 20,
-        marginRight: 20,
+        marginRight: 20,        
     },
     todoContainer:{
-        padding: 15,
+        padding: 10,
         flexDirection: 'row',
         alignItems: 'center',
+        margin: 10,
+        backgroundColor: 'aqua',
+        borderRadius: 10,
     },
     todoIcon:{
-        fontSize: 20,
+        fontSize: 30,
+
     },
 })
