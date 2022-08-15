@@ -41,10 +41,10 @@ Quickly manage list of tasks on an android mobile device
 flowchart LR
   App-->Home-->Detail  
 ```
-![Hierarchy](https://drive.google.com/file/d/1TymquIwBlgM3ip0BuQzpkwcA1bed-uuC/view?usp=sharing)
+![Hierarchy](https://react-native-todo-cj.s3.us-east-2.amazonaws.com/docs/React-Native+ToDo+Hierarchy.png)
 
 ## User Interface Mockups
 
-![Home](https://drive.google.com/file/d/1pRDA34hVlkKPgjUQJAT0BcrXrUb2YJDV/view?usp=sharing)
-![Detail](https://drive.google.com/file/d/1jIVDXG_OtAiyR5i03W6Db9tBshR5VIot/view?usp=sharing)
+![Home](https://react-native-todo-cj.s3.us-east-2.amazonaws.com/docs/1+ToDo+Home.png)
+![Detail](https://react-native-todo-cj.s3.us-east-2.amazonaws.com/docs/2+ToDo+Detail.png)
 
