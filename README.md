@@ -1,4 +1,8 @@
 # Product Requirements Documentation
+- Download the expo app on your android device and scan the qr code below to access application
+- Donate to fund deployment to Google Play Store ($25) or iOS app store ($99)
+![expo app](https://react-native-todo-cj.s3.us-east-2.amazonaws.com/docs/Expo+App.webp)
+![Todo QR Code](https://react-native-todo-cj.s3.us-east-2.amazonaws.com/docs/Expo+Publish+QR+Code.png)
 
 **Summary**
 | Field | Detail |
