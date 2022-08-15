@@ -11,31 +11,31 @@
 | Planning | https://miro.com/app/board/uXjVPfU1C5Q=/?share_link_id=563111831555 |
 | Technologies | JSX, JavaScript, React-Native, Firebase, Google Cloud, Miro, Github |
 
-## Things I Want to Improve:
+# Things I Want to Improve:
 - Add authentication and authorization
 - add notes on detail page
 - Drag and reorder todos to dynamically prioritize
 - Keep previous text during edit
 
 
-## Problem Being Solved and Target Market
+# Problem Being Solved and Target Market
 
 Quickly manage list of tasks on an android mobile device
 
-## User Stories
+# User Stories
 
 - As a user, I want to view all todos
 - I want to edit a todo
 - I want to delete a todo
 
-## Route Tables
+# Route Tables
 |Name|Action|
 |----|------|
 |Home|Index|
 |x|Delete|
 |Detail|Edit|
 
-## Component Architecture
+# Component Architecture
 
 ```mermaid
 flowchart LR
@@ -45,9 +45,9 @@ flowchart LR
 
 ## User Interface Mockups
 
-# Home
+## Home
 ![Home](https://react-native-todo-cj.s3.us-east-2.amazonaws.com/docs/1+ToDo+Home.png)
 
-# Detail
+## Detail
 ![Detail](https://react-native-todo-cj.s3.us-east-2.amazonaws.com/docs/2+ToDo+Detail.png)
 
