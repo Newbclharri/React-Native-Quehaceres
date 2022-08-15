@@ -19,7 +19,7 @@
 | Planning | https://miro.com/app/board/uXjVPfU1C5Q=/?share_link_id=563111831555 |
 | Technologies | JSX, JavaScript, React-Native, Firebase, Google Cloud, Miro, Github |
 
-# Things I Want to Improve:
+# Things to Improve:
 - Add authentication and authorization
 - Add notes on detail page
 - Drag and reorder todos to dynamically prioritize items
