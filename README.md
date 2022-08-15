@@ -11,7 +11,7 @@
 **Summary**
 | Field | Detail |
 |-------|--------|
-| Project Name | React-Native ToDO |
+| Project Name | React-Native Todo |
 | Description |Manages tasks on an android device |
 | Developers | Calvin Harris |
 | Live Website | https://expo.dev/@contactharrisc2/Todo-Mobile?serviceType=classic&distribution=eexpo-go |
