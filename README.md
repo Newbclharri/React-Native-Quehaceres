@@ -45,6 +45,9 @@ flowchart LR
 
 ## User Interface Mockups
 
+# Home
 ![Home](https://react-native-todo-cj.s3.us-east-2.amazonaws.com/docs/1+ToDo+Home.png)
+
+# Detail
 ![Detail](https://react-native-todo-cj.s3.us-east-2.amazonaws.com/docs/2+ToDo+Detail.png)
 
