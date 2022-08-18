@@ -18,6 +18,8 @@
 | Repo | https://github.com/Newbclharri/React-Native-To-Do  |
 | Planning | https://miro.com/app/board/uXjVPfU1C5Q=/?share_link_id=563111831555 |
 | Technologies | JSX, JavaScript, React-Native, Firebase, Google Cloud, Miro, Github |
+|Backend| Firebase 9.6.11|
+|Frotend | React Native|
 
 # Things to Come:
 - Add authentication and authorization
